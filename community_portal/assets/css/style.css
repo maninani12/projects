@@ -1,0 +1,143 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+}
+
+header a {
+    color: white;
+    margin-left: 15px;
+    text-decoration: none;
+}
+
+.dashboard-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.feed {
+    width: 100%;
+    max-width: 700px;
+}
+
+.post {
+    background-color: white;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+
+.post-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.profile-pic {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.post-image {
+    width: 100%;
+    max-height: 400px;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+.dark-theme {
+    background-color: #121212;
+    color: #e0e0e0;
+}
+
+.dark-theme .post {
+    background-color: #1e1e1e;
+}
+
+.dark-theme header {
+    background-color: #1a73e8;
+}
+.admin-container table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 30px;
+}
+
+.admin-container th, .admin-container td {
+    border: 1px solid #ccc;
+    padding: 8px 12px;
+    text-align: left;
+}
+
+.admin-container th {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.admin-container a {
+    color: red;
+    text-decoration: none;
+}
+/* Light Mode - default */
+body.light-mode {
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+/* Dark Mode */
+body.dark-mode {
+    background-color: #121212;
+    color: #f1f1f1;
+}
+
+/* Header styles */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+}
+
+header a {
+    color: white;
+    margin-left: 15px;
+    text-decoration: none;
+}
+
+header button {
+    margin-left: 15px;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.post {
+    background-color: white;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+body.dark-mode .post {
+    background-color: #1e1e1e;
+}
