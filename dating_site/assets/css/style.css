@@ -1,0 +1,39 @@
+/* Reset & Base */
+* { margin:0; padding:0; box-sizing:border-box; font-family: Arial, sans-serif; }
+body { background:#f0f2f5; color:#333; }
+a { text-decoration:none; color:#007bff; }
+button { cursor:pointer; }
+
+/* Container */
+.container { width:90%; max-width:1200px; margin:auto; padding:20px; }
+
+/* Header */
+header { display:flex; justify-content:space-between; align-items:center; padding:10px 0; background:#fff; box-shadow:0 2px 5px rgba(0,0,0,0.1);}
+header h1 { font-size:24px; color:#007bff; }
+
+/* Dashboard Cards */
+.card { background:#fff; border-radius:10px; box-shadow:0 2px 8px rgba(0,0,0,0.1); padding:20px; margin:10px 0; }
+.card img { border-radius:50%; }
+.card h3 { margin:10px 0 5px; }
+.card p { font-size:14px; color:#555; }
+
+/* Swipe Container */
+#swipe-container { display:flex; justify-content:center; align-items:center; height:400px; position:relative; }
+#swipe-container .card { position:absolute; width:250px; height:350px; transition: transform 0.3s, opacity 0.3s; }
+
+/* Buttons */
+button { background:#007bff; color:#fff; border:none; padding:10px 15px; border-radius:5px; margin:5px; transition:0.2s; }
+button:hover { background:#0056b3; }
+
+/* Chat Box */
+#chat-box { background:#fff; padding:10px; border-radius:10px; height:400px; overflow-y:auto; margin-bottom:10px; }
+
+/* Forms */
+form input, form select, form textarea { width:100%; padding:10px; margin:5px 0; border-radius:5px; border:1px solid #ccc; }
+form button { width:100%; margin-top:10px; }
+
+/* Responsive */
+@media(max-width:768px){
+    header { flex-direction:column; text-align:center; }
+    #swipe-container .card { width:200px; height:300px; }
+}
